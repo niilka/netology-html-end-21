@@ -1,0 +1,189 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$sprite-patch: "../img/icons/png/png-sprite/sprite.png";
+$arrows-name: 'arrows';
+$arrows-x: 1331px;
+$arrows-y: 0px;
+$arrows-offset-x: -1331px;
+$arrows-offset-y: 0px;
+$arrows-width: 131px;
+$arrows-height: 115px;
+$arrows-total-width: 1680px;
+$arrows-total-height: 151px;
+$arrows-image: $sprite-patch;
+$arrows: (1331px, 0px, -1331px, 0px, 131px, 115px, 1680px, 151px, $sprite-patch, 'arrows', );
+$feature-1-name: 'feature-1';
+$feature-1-x: 293px;
+$feature-1-y: 0px;
+$feature-1-offset-x: -293px;
+$feature-1-offset-y: 0px;
+$feature-1-width: 86px;
+$feature-1-height: 86px;
+$feature-1-total-width: 1680px;
+$feature-1-total-height: 151px;
+$feature-1-image: $sprite-patch;
+$feature-1: (293px, 0px, -293px, 0px, 86px, 86px, 1680px, 151px, $sprite-patch, 'feature-1', );
+$feature-2-name: 'feature-2';
+$feature-2-x: 459px;
+$feature-2-y: 0px;
+$feature-2-offset-x: -459px;
+$feature-2-offset-y: 0px;
+$feature-2-width: 88px;
+$feature-2-height: 97px;
+$feature-2-total-width: 1680px;
+$feature-2-total-height: 151px;
+$feature-2-image: $sprite-patch;
+$feature-2: (459px, 0px, -459px, 0px, 88px, 97px, 1680px, 151px, $sprite-patch, 'feature-2', );
+$feature-3-name: 'feature-3';
+$feature-3-x: 627px;
+$feature-3-y: 0px;
+$feature-3-offset-x: -627px;
+$feature-3-offset-y: 0px;
+$feature-3-width: 90px;
+$feature-3-height: 93px;
+$feature-3-total-width: 1680px;
+$feature-3-total-height: 151px;
+$feature-3-image: $sprite-patch;
+$feature-3: (627px, 0px, -627px, 0px, 90px, 93px, 1680px, 151px, $sprite-patch, 'feature-3', );
+$feature-4-name: 'feature-4';
+$feature-4-x: 0px;
+$feature-4-y: 0px;
+$feature-4-offset-x: 0px;
+$feature-4-offset-y: 0px;
+$feature-4-width: 65px;
+$feature-4-height: 86px;
+$feature-4-total-width: 1680px;
+$feature-4-total-height: 151px;
+$feature-4-image: $sprite-patch;
+$feature-4: (0px, 0px, 0px, 0px, 65px, 86px, 1680px, 151px, $sprite-patch, 'feature-4', );
+$feature-5-name: 'feature-5';
+$feature-5-x: 797px;
+$feature-5-y: 0px;
+$feature-5-offset-x: -797px;
+$feature-5-offset-y: 0px;
+$feature-5-width: 93px;
+$feature-5-height: 69px;
+$feature-5-total-width: 1680px;
+$feature-5-total-height: 151px;
+$feature-5-image: $sprite-patch;
+$feature-5: (797px, 0px, -797px, 0px, 93px, 69px, 1680px, 151px, $sprite-patch, 'feature-5', );
+$feature-6-name: 'feature-6';
+$feature-6-x: 145px;
+$feature-6-y: 0px;
+$feature-6-offset-x: -145px;
+$feature-6-offset-y: 0px;
+$feature-6-width: 68px;
+$feature-6-height: 81px;
+$feature-6-total-width: 1680px;
+$feature-6-total-height: 151px;
+$feature-6-image: $sprite-patch;
+$feature-6: (145px, 0px, -145px, 0px, 68px, 81px, 1680px, 151px, $sprite-patch, 'feature-6', );
+$hym-name: 'hym';
+$hym-x: 1542px;
+$hym-y: 0px;
+$hym-offset-x: -1542px;
+$hym-offset-y: 0px;
+$hym-width: 138px;
+$hym-height: 151px;
+$hym-total-width: 1680px;
+$hym-total-height: 151px;
+$hym-image: $sprite-patch;
+$hym: (1542px, 0px, -1542px, 0px, 138px, 151px, 1680px, 151px, $sprite-patch, 'hym', );
+$lamp-name: 'lamp';
+$lamp-x: 1145px;
+$lamp-y: 0px;
+$lamp-offset-x: -1145px;
+$lamp-offset-y: 0px;
+$lamp-width: 106px;
+$lamp-height: 113px;
+$lamp-total-width: 1680px;
+$lamp-total-height: 151px;
+$lamp-image: $sprite-patch;
+$lamp: (1145px, 0px, -1145px, 0px, 106px, 113px, 1680px, 151px, $sprite-patch, 'lamp', );
+$tree-name: 'tree';
+$tree-x: 970px;
+$tree-y: 0px;
+$tree-offset-x: -970px;
+$tree-offset-y: 0px;
+$tree-width: 95px;
+$tree-height: 116px;
+$tree-total-width: 1680px;
+$tree-total-height: 151px;
+$tree-image: $sprite-patch;
+$tree: (970px, 0px, -970px, 0px, 95px, 116px, 1680px, 151px, $sprite-patch, 'tree', );
+$spritesheet-width: 1680px;
+$spritesheet-height: 151px;
+$spritesheet-image: $sprite-patch;
+$spritesheet-sprites: ($arrows, $feature-1, $feature-2, $feature-3, $feature-4, $feature-5, $feature-6, $hym, $lamp, $tree, );
+$spritesheet: (1680px, 151px, $sprite-patch, $spritesheet-sprites, );
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,244 @@
+@import "vars";
+.cnt {
+  max-width: 1160px;
+  margin: 0 auto;
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .col {
+    width: 50%;
+    float: left;
+    vertical-align: top;
+  }
+}
+
+.portfolio-wrapper--project-block {
+  width: 25%;
+}
+
+
+/*==========  Desktop First  ========== */
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+  .portfolio-wrapper--project-block {
+    width: 33.33%;
+    padding-left: 0!important;
+  }
+  .portfolio-wrapper--projects-grid {
+    margin-left: 0!important;
+  }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width: 992px) {
+  .field-wrapper--email-field {
+    font-size: 12px !important;
+  }
+  .portfolio-wrapper--project-block {
+    width: 50%;
+  }
+  .portfolio-section {
+    padding-top: 68px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 69px;
+    &::before,
+    &::after {
+      background-color: #efefef;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      z-index: -1;
+    }
+    &::before {
+      border-radius: 0%;
+      top: 20px;
+      left: -50%;
+      width: 200%;
+      height: 100%;
+    }
+    &::after {
+      content: "";
+      top: auto;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      height: 1000px;
+    }
+  }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
+  .cnt {
+    text-align: center;
+    .col {
+      width: 100%;
+    }
+  }
+  .footer-bottom-line--site-map {
+    ul {
+      li {
+        display: block!important;
+        text-align: center!important;
+        padding-right: 0 !important;
+        margin: 0!important;
+        padding-bottom: 10px !important;
+        a {
+          padding: 0!important;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 6px;
+          width: 0px!important;
+          height: 0px!important;
+          right: -13px;
+          background-color: $font-color;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .footer-content-wrapper--footer-middle-line {
+    margin-bottom: 20px !important;
+  }
+  .footer-middle-line--footer-buttons {
+    ul {
+      li {
+        border: none!important
+      }
+    }
+  }
+  .sub-bar--field-wrapper {
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    margin-right: 50px;
+    margin-left: 50px!important;
+  }
+  .portfolio-wrapper--project-block {
+    width: 100%;
+  }
+  .portfolio-wrapper--selection-menu {
+    ul {
+      li {
+        margin: 0!important;
+        padding: 5px!important;
+        a {
+          margin: 0!important;
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+  .field-wrapper--join-button {
+    padding: 8px 15px!important;
+    margin-top: 18px!important;
+  }
+  .portfolio-wrapper--title-wrapper {
+    padding-left: 0 !important;
+    width: auto!important;
+    text-align: center;
+    margin-bottom: 0 !important;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: 0;
+      background-image: none!important;
+    }
+    .title-wrapper--main-title {
+      font-size: 35px!important;
+    }
+    .title-wrapper--title-description {
+      display: none!important;
+      width: 240px;
+      margin: 0 auto;
+    }
+  }
+  .portfolio-wrapper--selection-menu {
+    ul {
+      li {
+        margin: 0!important;
+        display: block!important;
+        margin-right: 80px !important;
+        margin-left: 80px !important;
+        margin-bottom: 10px !important;
+        a {
+          margin: 0!important;
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+  .portfolio-wrapper--title-wrapper {
+    .title-wrapper--main-title {
+      font-size: 35px!important;
+    }
+    .title-wrapper--title-description {
+      font-size: 14px!important;
+      width: 240px;
+    }
+  }
+}
+
+
+/*==========  Mobile First  ========== */
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {
+  /* */
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+  /* */
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+  /* */
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+  /* */
+}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {
+  /* */
+}

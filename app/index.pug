@@ -1,0 +1,314 @@
+include _pug-mixins/_svg-sprites.pug
+- var header_left_links = "#7e7f82"
+- var facebook ="#2b75b2"
+- var twitter ="#1faae2"
+- var instagram ="#26658e"
+- var gplus ="#dd4070"
+- var soc_btns_g = "#414344"
+- var header_links = "#6d6e71";
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title Title
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+    style.
+      body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }
+  body
+    link(rel='stylesheet', href='css/main.min.css')
+
+    header.site-header
+      .site-header--top-line   
+        .top-line--content-wrapper.cnt
+          .content-wrapper--left-column-links.col
+            ul
+              li
+                a(href="#") Blog
+                  +svg-icon("blog",19, header_left_links)
+              li
+                a(href="#") Jobs
+                  +svg-icon("jobs",20, header_left_links)
+              li
+                a(href="#") Support
+                  +svg-icon("support",18, header_left_links)
+              li
+                a(href="#") Arabic    
+                  +svg-icon("language",19, header_left_links)      
+          .content-wrapper--right-column-links.col
+            ul
+              li
+                a(href="#")
+                  +svg-icon("facebook",21, facebook)
+              li
+                a(href="#")
+                  +svg-icon("twitter",25, twitter)
+              li
+                a(href="#")
+                  +svg-icon("instagram",21, instagram)
+              li
+                a(href="#")
+                  +svg-icon("gplus",24, gplus)
+      .site-header--middle-line
+        .middle-line--content-wrapper.cnt
+          .content-wrapper--logotype-wrapper.col
+            img.logotype-wrapper--logotype(src="img/logo.png")
+          .content-wrapper--contacts-links.col
+            ul
+              li
+                a(href="#")
+                  +svg-icon("phone",28, header_links)
+                .contants-links--tooltip
+                  span.tooltip--message Saudi Arabia . Alreyadah
+              li
+                a(href="#")
+                  +svg-icon("nav",34, header_links)
+                .contants-links--tooltip
+                  span.tooltip--message Saudi Arabia . Alreyadah
+              li
+                a(href="#")
+                  +svg-icon("mail",29, header_links)
+                .contants-links--tooltip
+                  span.tooltip--message Saudi Arabia . Alreyadah
+      .site-header--bottom-line
+        .bottom-line--content-wrapper.cnt
+          nav.content-wrapper--site-navigation
+            ul
+              li
+                a(href="#") Home
+              li
+                a(href="#") What about ISAMA
+              li
+                a(href="#") What we do ?
+              li
+                a(href="#") Our Projects
+              li
+                a(href="#") Excellent Team
+              li
+                a(href="#") Contact
+          .content-wrapper--search-box
+            +svg-icon("search",25,header_links)
+            input.search-box--search-field(type="text", placeholder="Type your search words")
+      .site-header--hero-wrapper
+        .hero-wrapper--hero-content.cnt
+          .hero-content--title-wrapper
+            h1.title-wrapper--main-title Let’s draw some arts
+              span.title-wrapper--amp &amp
+            p.title-wrapper--title-description make your business much better
+            
+          .hero-content--images-slider
+            .images-slider--image-wrapper
+              img.image-wrapper--slider-image(src="img/slider/image-1.jpg", alt="office")
+              .image-wrapper--like-wrapper
+                a.like-wrapper--like-button(href="#")
+                  span.like-button--like-text Like
+                  +svg-icon("like",32,"#adff63")
+            .images-slider--image-wrapper
+              img.image-wrapper--slider-image(src="img/slider/image-2.jpg", alt="phone")
+              .image-wrapper--like-wrapper
+                a.like-wrapper--like-button(href="#")
+                  span.like-button--like-text Like
+                  +svg-icon("like",32,"#cc9800")
+            a.images-slider--slider-arrow(href="#")
+              +svg-icon("arrow",40,"#d4d4d4")
+    section.about-section
+      .about-section--articles-wrapper.cnt
+        article.article-wrapper--left-column.col
+          .left-column--background-icon
+          .left-column--article-content
+            h3.left-column--article-title What about ISAMA
+            p.left-column--article-text ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads to a modern concept of professionalism. At ISAMA we believe even if you are good at what you do, you have a great product or you provide an excellent service. We still can present you a little better to the world, creating your full identity, provides you with your marketing plans, design your website, print your publications, design your logo’s and offices. Simply we give your business the perfect image.
+        article.article-wrapper--right-column.col
+          .right-column--background-icon
+          .right-column--article-content
+            h3.right-column--article-title Why we exist
+            p.right-column--article-text Reaching customer satisfaction through providing them with cutting-edge technologies that give clients access to a wide range of tools, ensuring efficient and results-oriented communication solutions, which grant them a special character that distinguishes them from the others in the business.
+
+    section.features-section
+      .features-section--content-wrapper.cnt
+        .content-wrapper--title-wrapper
+          .title-wrapper--background-icon
+          h2.title-wrapper--main-title What we do ?
+          p.title-wrapper-title-description Everything you need to do business intelligence right.
+
+        .content-wrapper--features-grid
+          .features-grid--features-left.col
+            .features-left--feature-block
+              .feature-block--backgroind-icon
+              .feature-block--title-wrapper
+                h2.title-wrapper--main-title Web Design & Development
+                p.title-wrapper--title-description ISAMA Pvt. Ltd. designs and develops creative websites utilizing the latest technologies.
+
+            .features-left--feature-block
+              .feature-block--backgroind-icon
+              .feature-block--title-wrapper
+                h2.title-wrapper--main-title Software Solutions
+                p.title-wrapper--title-description with our software for professional services and consulting firms. Grow your revenue and profit margins by assigning the right people to the right projects at the right time.
+
+            .features-left--feature-block
+              .feature-block--backgroind-icon
+              .feature-block--title-wrapper
+                h2.title-wrapper--main-title Branding
+                p.title-wrapper--title-description We have our forte in advertising and Brand establishment. We create identities for the clients product and services in the target market.
+
+
+          .features-grid--features-right.col
+            .features-right--feature-block
+              .feature-block--backgroind-icon
+              .feature-block--title-wrapper
+                h2.title-wrapper--main-title Mobile Applications
+                p.title-wrapper--title-description Our Developers helps you to Design, Develop & Distribute Mobile Applications - Smarter & Faster.
+
+            .features-right--feature-block
+              .feature-block--backgroind-icon
+              .feature-block--title-wrapper
+                h2.title-wrapper--main-title Interior Design
+                p.title-wrapper--title-description We offer a variety of design services ranging from Full Service Interior Design and Styling to our Design Concierge service, all of which are executed with beautiful, custom-tailored results.
+
+            .features-right--feature-block
+              .feature-block--backgroind-icon
+              .feature-block--title-wrapper
+                h2.title-wrapper--main-title SEO & Web Marketing Services
+                p.title-wrapper--title-description We offer a variety of design services ranging from Full Service Interior Design and Styling to our Design Concierge service, all of which are executed with beautiful, custom-tailored results.
+
+    section.portfolio-section
+      .portfolio-section--section-content
+        .portfolio-section--portfolio-wrapper.cnt
+          .portfolio-wrapper--title-wrapper
+            .title-wrapper--background-icon
+            h2.title-wrapper--main-title Our Projects
+            p.title-wrapper--title-description Some of our awesome work Proud of doing great works for our clients
+          .portfolio-wrapper--selection-menu
+            ul
+              li
+                a(href="#") All
+              li
+                a(href="#") Mobile Apps
+              li
+                a(href="#") Identities
+              li
+                a(href="#") Interior Design
+              li
+                a(href="#")  UI/UX
+
+
+          .portfolio-wrapper--projects-grid
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-1.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-2.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-3.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-4.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-5.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-6.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-7.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+
+            .portfolio-wrapper--project-block
+              .project-block--inner-wrapper
+                .inner-wrapper--image-wrapper
+                  img.image-wrapper--image(src="img/portfilio/project-8.png")
+                .inner-wrapper--buttons-wrapper
+                  a.buttons-wrapper--share-button(href="#")
+                    +svg-icon("share",23, "#c8cacf")
+                  a.buttons-wrapper--more-button(href="#")
+                    +svg-icon("more",24, "#c8cacf")
+    footer.site-footer
+      .site-footer--footer-content-wrapper.cnt
+        .footer-content-wrapper--footer-middle-line.cnt
+          .footer-middle-line--footer-buttons.col
+            ul
+              li
+                a(href="#")
+                  +svg-icon("facebook",21, soc_btns_g)
+              li
+                a(href="#")
+                  +svg-icon("twitter",24, soc_btns_g)
+              li
+                a(href="#")
+                  +svg-icon("instagram",21, soc_btns_g)
+              li
+                a(href="#")
+                  +svg-icon("gplus",23, soc_btns_g)
+          .footer-middle-line--sub-bar.col
+            form.sub-bar--field-wrapper
+              +svg-icon("profile",32, "#6b6f71")
+              input.field-wrapper--email-field(type="email", placeholder="Enter your email for out newsletter")
+              button(type="submit").field-wrapper--join-button Join
+        .footer-content-wrapper--footer-bottom-line.cnt
+          .footer-bottom-line--copyright-wrapper.col
+            span.copyright-wrapper--copyright &copy Copyright 2014 - ISAMA for information technology
+          .footer-bottom-line--site-map.col
+            ul
+              li
+                a(href="#") Blog
+              li
+                a(href="#") Job
+              li
+                a(href="#") Terms of Service
+              li
+                a(href="#") Privacy
+              li
+                a(href="#") Policy
+                
+    script(src='js/scripts.min.js')
