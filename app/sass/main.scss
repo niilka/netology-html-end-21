@@ -668,12 +668,13 @@
   }
   .content-wrapper--features-grid {
     padding-top: 97px;
-    .feature-block--backgroind-icon {
-      position: absolute;
-      top: 0;
+    .feature-block--background-icon {
+      display: inline-block;
+      vertical-align: top;
     }
     .feature-block--title-wrapper {
       text-align: left;
+      display: inline-block;
       .title-wrapper--main-title {
         font-size: 24px;
         font-weight: 700;
@@ -704,31 +705,34 @@
       }
       .features-left--feature-block {
         position: relative;
+        text-align: left;
         &:nth-child(1) {
-          .feature-block--backgroind-icon {
+          .feature-block--background-icon {
             @include sprite($feature-1);
-            top: 8px;
-            left: -2px;
+            margin-top: 8px;
+            margin-left: -2px;
+            margin-right: 27px;
           }
         }
         &:nth-child(2) {
           margin-top: 88px;
-          .feature-block--backgroind-icon {
+          .feature-block--background-icon {
             @include sprite($feature-2);
-            top: 8px;
-            left: -2px;
+            margin-top: 8px;
+            margin-left: -2px;
+            margin-right: 25px;
           }
         }
         &:nth-child(3) {
           margin-top: 86px;
-          .feature-block--backgroind-icon {
+          .feature-block--background-icon {
             @include sprite($feature-3);
-            top: 8px;
-            left: -3px;
+            margin-top: 8px;
+            margin-left: -2px;
+            margin-right: 23px;
           }
         }
         .feature-block--title-wrapper {
-          padding-left: 116px;
           .title-wrapper--main-title {}
           .title-wrapper--title-description {}
         }
@@ -737,31 +741,34 @@
     .features-grid--features-right {
       .features-right--feature-block {
         position: relative;
+        text-align: left;
         &:nth-child(1) {
-          .feature-block--backgroind-icon {
+          .feature-block--background-icon {
             @include sprite($feature-4);
-            top: 8px;
-            left: 96px;
+            margin-left: 96px;
+            margin-top: 8px;
+            margin-right: 27px;
           }
         }
         &:nth-child(2) {
           margin-top: 88px;
-          .feature-block--backgroind-icon {
+          .feature-block--background-icon {
             @include sprite($feature-5);
-            top: 3px;
-            left: 80px;
+            margin-left: 80px;
+            margin-top: 3px;
+            margin-right: 15px;
           }
         }
         &:nth-child(3) {
           margin-top: 86px;
-          .feature-block--backgroind-icon {
+          .feature-block--background-icon {
             @include sprite($feature-6);
-            top: 7px;
-            left: 95px;
+            margin-left: 95px;
+            margin-top: 7px;
+            margin-right: 25px;
           }
         }
         .feature-block--title-wrapper {
-          padding-left: 193px;
           .title-wrapper--main-title {}
           .title-wrapper--title-description {}
         }
